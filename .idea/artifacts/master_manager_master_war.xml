@@ -1,14 +1,14 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="master-manager:war">
+  <artifact type="war" name="master-manager-master:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <module>master-manager</module>
+        <module>master-manager-master</module>
         <packaging>war</packaging>
       </options>
     </properties>
     <root id="archive" name="master-manager-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="master-manager:war exploded" />
+      <element id="artifact" artifact-name="master-manager-master:war exploded" />
     </root>
   </artifact>
 </component>
