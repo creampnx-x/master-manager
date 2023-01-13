@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class BaseDao {
     private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private static String url = "jdbc:sqlserver://127.0.0.1\\SQLEXPRESS:1433;database=master_manager";
+    private static String url = "jdbc:sqlserver://127.0.0.1\\SQLEXPRESS:1433;database=master_manager;encrypt=false";
     private static String user = "root";
     private static String password = "root";
 
@@ -45,15 +45,18 @@ public class BaseDao {
                     statement.setObject(i + 1, param[i]);
                 }
             }
-            result = statement.executeQuery();
+            boolean isQuery = statement.execute();
+            if (isQuery) {
+                result = statement.getResultSet();
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                BaseDao.closeAll(connection, statement, null);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                // BaseDao.closeAll(connection, statement, null);
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
         }
         return result;
     }
