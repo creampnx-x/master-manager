@@ -8,6 +8,17 @@ public class AchievementsIdentification {
   private long achievements;
   private String initialStatus;
   private String finalStatus;
+  private long mentor;
+
+  public String getUserType() {
+    return userType;
+  }
+
+  public void setUserType(String userType) {
+    this.userType = userType;
+  }
+
+  private String userType;
 
 
   public long getId() {
@@ -52,6 +63,15 @@ public class AchievementsIdentification {
 
   public void setFinalStatus(String finalStatus) {
     this.finalStatus = finalStatus;
+  }
+
+
+  public long getMentor() {
+    return mentor;
+  }
+
+  public void setMentor(long mentor) {
+    this.mentor = mentor;
   }
 
 }
