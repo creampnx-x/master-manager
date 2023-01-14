@@ -14,6 +14,9 @@
           <element id="module-output" name="master-manager" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="master-manager-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="master-manager" />
+          </element>
           <element id="library" level="project" name="Maven: jakarta.servlet:jakarta.servlet-api:5.0.0" />
           <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.2" />
           <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
@@ -43,6 +46,10 @@
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.10.1" />
           <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jms_2.0_spec:1.0-alpha-2" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:19" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:19" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-base:19" />
+          <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:19" />
         </element>
       </element>
       <element id="directory" name="META-INF">
